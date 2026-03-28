@@ -1,5 +1,5 @@
 #pragma once
-// auto generated discord is @decamped dm me with any questions :)
+// auto generated discord is @decamped dm me with any questions :) please star the repo
 
 #include <cstdint>
 
