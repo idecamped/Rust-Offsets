@@ -1,21 +1,21 @@
 {
   "offsets": {
     "BasePlayer": {
-      "playerNames": "0x358",
-      "PlayerEyes": "0x640",
-      "PlayerInventory": "0x390",
-      "PlayerInput": "0x350",
-      "PlayerMovement": "0x2b8",
-      "PlayerModel": "0x508",
+      "playerNames": "0x668",
+      "PlayerEyes": "0x2c8",
+      "PlayerInventory": "0x300",
+      "PlayerInput": "0x700",
+      "PlayerMovement": "0x4a0",
+      "PlayerModel": "0x500",
       "playerFlags": "0x630",
-      "ModelState": "0x2d0",
+      "ModelState": "0x5c8",
       "currentTeam": "0x4b8",
       "clActiveItem": "0x4e8",
       "clothingBlocksAiming": "0x714",
       "clothingMoveSpeedReduction": "0x718",
       "UserID": "0x4d8",
-      "metabolism": "0x2c8",
-      "modifiers": "0x308",
+      "metabolism": "0x588",
+      "modifiers": "0x2a8",
       "clothingAccuracyBonus": "0x720",
       "clothingWaterSpeedBonus": "0x71c"
     },
@@ -24,7 +24,7 @@
       "Bounds": "0xc8",
       "flags": "0xf8",
       "skinID": "0x100",
-      "triggers": "0x168",
+      "triggers": "0x190",
       "HasBrain": "0x110",
       "gameObject": "0xe0"
     },
@@ -42,27 +42,27 @@
       "Velocity": "0x204",
       "newVelocity": "0x210",
       "Rotation": "0x228",
-      "GestureConfig": "0x390",
+      "GestureConfig": "0x370",
       "IsNpc__BackingField": "0x4c4",
-      "__Multimesh": "0x4a8"
+      "__Multimesh": "0x1f0"
     },
     "PlayerInventory": {
-      "ItemContainer": "0x30",
-      "ContainerBelt": "0x58",
-      "ContainerWear": "0x60"
+      "ItemContainer": "0x28",
+      "ContainerBelt": "0x30",
+      "ContainerWear": "0x78"
     },
     "Item": {
-      "ItemList": "0x30",
-      "ItemDefinition": "0x78",
-      "Amount": "0x38",
-      "CurrentHealth": "0x10",
-      "MaxHealth": "0xc8",
-      "ItemUID": "0xa8",
-      "HeldEntity": "0x80"
+      "ItemList": "0x40",
+      "ItemDefinition": "0x48",
+      "Amount": "0x20",
+      "CurrentHealth": "0x14",
+      "MaxHealth": "0xd0",
+      "ItemUID": "0xc8",
+      "HeldEntity": "0x58"
     },
     "ItemContainer": {
-      "ItemList": "0x30",
-      "Capacity": "0x50"
+      "ItemList": "0x60",
+      "Capacity": "0x38"
     },
     "List": {
       "Buffer": "0x10",
@@ -70,15 +70,15 @@
       "ArrayBase": "0x20"
     },
     "HeldEntity": {
-      "ViewModel": "0x278",
-      "viewModel": "0x200",
+      "ViewModel": "0x268",
+      "viewModel": "0x278",
       "hostileScore": "0x244"
     },
     "BaseViewModel": {
-      "IronSights": "0xb0",
-      "AnimationEvents": "0xe8",
-      "ViewmodelBob": "0xf0",
-      "ViewmodelSway": "0x90",
+      "IronSights": "0x98",
+      "AnimationEvents": "0x80",
+      "ViewmodelBob": "0xd8",
+      "ViewmodelSway": "0x88",
       "useViewModelCamera": "0x40",
       "lazyaimRegular": "0x28"
     },
@@ -86,7 +86,7 @@
       "shortname": "0x28",
       "itemid": "0x20",
       "displayName": "0x40",
-      "ItemMod": "0x148",
+      "ItemMod": "0x158",
       "category": "0x58",
       "rarity": "0x90",
       "stackable": "0x78",
@@ -142,27 +142,27 @@
       "previousVelocity": "0x198",
       "projectileID": "0x20",
       "owner": "0x128",
-      "hitTest": "0x1d8",
+      "hitTest": "0x118",
       "drag": "0x34",
       "gravityModifier": "0x38",
       "traveledDistance": "0x174",
-      "mod": "0x1e8"
+      "mod": "0x110"
     },
     "HitTest": {
-      "HitTransform": "0xb0",
-      "HitEntity": "0x28",
-      "type": "0x78",
-      "Radius": "0x20",
-      "didHit": "0x6c",
-      "HitNormal": "0x80",
-      "HitPoint": "0xd4",
-      "damageProperties": "0x10",
+      "HitTransform": "0x60",
+      "HitEntity": "0x10",
+      "type": "0x18",
+      "Radius": "0x44",
+      "didHit": "0x28",
+      "HitNormal": "0x1c",
+      "HitPoint": "0x50",
+      "damageProperties": "0x70",
       "HitDistance": "0x68",
-      "MultiHit": "0x7c",
-      "attackRay": "0x30",
-      "collider": "0x70",
-      "gameObject": "0x18",
-      "Bone": "0xb0"
+      "MultiHit": "0x29",
+      "attackRay": "0x2c",
+      "collider": "0x88",
+      "gameObject": "0xc0",
+      "Bone": "0x60"
     },
     "RecoilProperties": {
       "recoilYawMin": "0x18",
@@ -189,12 +189,12 @@
       "authorizedPlayers": "0x3c0"
     },
     "PatrolHelicopter": {
-      "weakspots": "0x418",
+      "weakspots": "0x420",
       "spotlightTarget": "0x3c8",
       "maxCratesToSpawn": "0x358",
       "bulletDamage": "0x360",
       "bulletSpeed": "0x35c",
-      "myAI": "0x430"
+      "myAI": "0x438"
     },
     "CompoundBowWeapon": {
       "stringHoldDurationMax": "0x478",
@@ -236,8 +236,8 @@
       "previous": "0x20"
     },
     "InputMessage": {
-      "buttons": "0x14",
-      "aimAngles": "0x18",
+      "buttons": "0x20",
+      "aimAngles": "0x10",
       "mouseDelta": "0x24"
     },
     "PlayerWalkMovement": {
@@ -332,7 +332,7 @@
     },
     "BuildingBlock": {
       "grade": "0x330",
-      "blockDefinition": "0x348"
+      "blockDefinition": "0x2f8"
     },
     "GrowableEntity": {
       "Properties": "0x2f8"
@@ -382,7 +382,7 @@
       "scrollRect": "0x40"
     },
     "Planner": {
-      "CurrentConstruction": "0x2a8"
+      "CurrentConstruction": "0x2b8"
     },
     "GestureConfig": {
       "gestureId": "0x18",
@@ -588,7 +588,7 @@
     },
     "TriggerBase": {
       "interestLayers": "0x20",
-      "entityContents": "0x38"
+      "entityContents": "0x40"
     },
     "TriggerRadiation": {
       "RadiationAmountOverride": "0x54"
@@ -599,8 +599,8 @@
     },
     "BaseNetworkable": {
       "ghandle": {
-        "value": "0xe4c58e8",
-        "sig": "0D EC 42 82 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe4aaa90",
+        "sig": "0D 88 55 80 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
       },
       "StaticFields": "0xb8",
       "ClientEntities": "0x10",
@@ -610,8 +610,8 @@
     },
     "ListComponent_Projectile": {
       "ListComponent_Projectile_C": {
-        "value": "0xe442f48",
-        "sig": "0D 9F 19 82 0A E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe46a190",
+        "sig": "F1 52 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 6C B0 7B"
       },
       "static_fields": "0xb8",
       "instance": "0x28",
@@ -619,33 +619,33 @@
     },
     "TodSky": {
       "TodSky_C": {
-        "value": "0xe48e260",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 66 82 ED 0D 01 48 8B 0D ?? ?? ?? ??"
+        "value": "0xe4ef0d8",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 E8 ?? ?? ?? ?? 80 BB 44 02 00 00 00"
       },
       "Instance": "0x10"
     },
     "Convar_Admin": {
       "TypeInfo": {
-        "value": "0xe484d68",
-        "sig": "58 03 80 3D 00 64 B8 0D 00 48 8B 7C ?? 40 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
+        "value": "0xe4ccb70",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 82 B4 69 0D 01 33 D2 48 8B CB E8 6B"
       }
     },
     "Convar_Graphics": {
       "TypeInfo": {
-        "value": "0xe4c5888",
-        "sig": "48 83 EC 20 80 3D 63 DA 4A 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 46 DA 4A 0E 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe453bf8",
+        "sig": "48 83 EC 20 80 3D 28 AC 47 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 0B AC 47 0E 01 48 8B 05 ?? ?? ?? ??"
       }
     },
     "Convar_Server": {
       "TypeInfo": {
-        "value": "0xe4c60d0",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 7E ?? B7 0D 01 48 8B C3 45 33 E4 44"
+        "value": "0xe49dfd8",
+        "sig": "0D E8 ?? ?? ?? ?? 4B F9 A5 FF F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
       }
     },
     "SingletonClimate": {
       "Climate_C": {
-        "value": "0xe4803c0",
-        "sig": "24 20 48 8B CB FF D0 80 3D 6A D4 B7 0D 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 50 D4 B7 0D 01 33 C9 E8 ?? ?? ?? ??"
+        "value": "0xe3fa998",
+        "sig": "CC CC CC 48 83 EC 28 80 3D E3 6A 79 ?? 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 C9 6A 79 ?? 01 48 8B 05 ?? ?? ?? ??"
       },
       "static_fields": "0xb8",
       "Instance": "0x28"
@@ -658,81 +658,81 @@
     },
     "ItemIcon": {
       "ItemIcon_C": {
-        "value": "0xe460890",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 7F ?? 00 09 01 48 8B 0D ?? ?? ?? ??"
+        "value": "0xe453f18",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 04 2E 96 0B 01 48 8B 0D ?? ?? ?? ??"
       },
       "Static_fields": "0xc0",
       "Instance": "0x18"
     },
     "PlayerEyes_Static": {
       "PlayerEyes_C": {
-        "value": "0xe48e9d8",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F6 D1 BA 0C 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe4cad60",
+        "sig": "60 80 3D 15 F7 65 0D 00 48 8B FA 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F5 F6 65 0D 01 48 8B 05 ?? ?? ?? ??"
       },
       "static_fields": "0xb8"
     },
     "BasePlayer_Static": {
       "BasePlayer_C": {
-        "value": "0xe4d9fe8",
-        "sig": "CC CC CC CC CC CC CC CC CC 40 57 48 81 EC 80 00 00 00 80 3D 65 2A AB 0D 00 48 8B F9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F3 29 AB 0D 01 80 BF A8 00"
+        "value": "0xe4cc9a8",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 45 1A 84 0D 01 33 C9 E8 ?? ?? ?? ??"
       },
       "static_fields": "0xb8",
       "visiblePlayerList": "0xf50"
     },
     "CameraUpdateHook_Static": {
       "CameraUpdateHook_C": {
-        "value": "0xe5004c8",
-        "sig": "0D 22 49 6C 0C E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe45a3d8",
+        "sig": "0D AA CE C8 0C E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
       },
       "static_fields": "0xb8"
     },
     "Planner_Static": {
       "Planner_C": {
-        "value": "0xe4c8f80",
-        "sig": "0D DB 44 81 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 64 AD B5 0D 01 33 C0 48 89 44 24"
+        "value": "0xe4b1bd8",
+        "sig": "48 83 EC 20 80 3D 3E C4 AD 0D 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 21 C4 AD 0D 01 48 8B 15 ?? ?? ?? ??"
       },
       "static_fields": "0xb8"
     },
     "MapView_Static": {
       "MapView_C": {
-        "value": "0xe4c6158",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 B3 AF B7 0D 01 48 8B 0D ?? ?? ?? ??"
+        "value": "0xe451110",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 75 ?? 9C 0D 01 48 8B 05 ?? ?? ?? ??"
       },
       "static_fields": "0xb8"
     },
     "CraftingQueue_Static": {
       "CraftingQueue_C": {
-        "value": "0xe49edd0",
-        "sig": "0D 7B ?? A6 09 E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 AC 7D ?? 09 01 48 8B 05 ?? ?? ?? ?? 83 B8 E0 00 00 00 00 75 ?? 48 8B C8 E8 10 AB CC"
+        "value": "0xe4ec0e0",
+        "sig": "0D 23 7F ?? 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 8B A6 3F 0D 01 33 C9 E8 30 A6 66"
       },
       "static_fields": "0xb8"
     },
     "WaterSystem_Static": {
       "WaterSystem_C": {
-        "value": "0xe4809a8",
-        "sig": "00 0F 29 74 ?? 30 0F 28 F0 0F 29 7C ?? 20 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 6B 20 8F 0D 01 F3 0F 5F 35 EE CA 54"
+        "value": "0xe411c28",
+        "sig": "CC CC CC 48 83 EC 28 80 3D BC 12 D2 0C 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 A2 12 D2 0C 01 48 8B 05 ?? ?? ?? ??"
       },
       "static_fields": "0xb8"
     },
     "BaseScreenShake_Static": {
       "BaseScreenShake_C": {
-        "value": "0xe47dd08",
-        "sig": "83 EC 20 80 3D AC 86 92 0B 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 6D 86 92 0B 01 48 8B 05 AD CF 5C"
+        "value": "0xe45f348",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 88 C7 AB 09 01 4C 8B 05 ?? ?? ?? ??"
       },
       "static_fields": "0xb8"
     },
     "MainCamera": {
       "MainCamera_C": {
-        "value": "0xe4c58f0",
-        "sig": "48 83 EC 20 80 3D 39 DD 70 ?? 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
+        "value": "0xe4bace8",
+        "sig": "48 83 EC 20 80 3D 8D 2B 6C 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
       },
       "mainCamera": "0x58",
       "mainCameraTransform": "0x78"
     },
     "SingletonComponent_MainCamera": {
       "SingletonComponent_C": {
-        "value": "0xe42a638",
-        "sig": "0D B0 FE 41 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe457d38",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F2 7F ?? 0D 01 48 8B 9F E8 00 00 00"
       },
       "Instance": "0x10"
     },
@@ -742,8 +742,8 @@
     },
     "Performance_Static": {
       "Performance_C": {
-        "value": "0xe526910",
-        "sig": "0D 6F FE ED 0C E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe4cacb8",
+        "sig": "0D AD EE 33 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
       },
       "static_fields": "0xb8",
       "fps": "0x49c"
@@ -753,16 +753,16 @@
     },
     "TOD_Sky_Static": {
       "TOD_Sky_C": {
-        "value": "0xe48e260",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 66 82 ED 0D 01 48 8B 0D ?? ?? ?? ??"
+        "value": "0xe4ef0d8",
+        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 E8 ?? ?? ?? ?? 80 BB 44 02 00 00 00"
       },
       "static_fields": "0xb8",
       "Instance": "0x10"
     },
     "OcclusionCulling": {
       "OcclusionCulling_C": {
-        "value": "0xe526dd8",
-        "sig": "0D 2D FA F4 0C E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe4d73c8",
+        "sig": "0D 78 ?? 14 09 E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
       },
       "static_fields": "0xb8"
     },
@@ -773,15 +773,15 @@
     },
     "Camera": {
       "MainCamera_C": {
-        "value": "0xe4c58f0",
-        "sig": "48 83 EC 20 80 3D 39 DD 70 ?? 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
+        "value": "0xe4bace8",
+        "sig": "48 83 EC 20 80 3D 8D 2B 6C 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
       }
     },
     "Il2Cpp": {
-      "sTypeInfoDefinitionTable": "0xe80b3e8"
+      "sTypeInfoDefinitionTable": "0xe7e3b20"
     },
     "SceneManager": {
-      "GetActiveScene": "0xbf40720"
+      "GetActiveScene": "0xbf21fc0"
     }
   },
   "decryptions": {
@@ -790,14 +790,13 @@
         "offset": "0x18",
         "uses_key": false,
         "is_loop": true,
-        "decrypt": "std::uintptr_t base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax + 0x49C8E325u;\n        eax = (eax << 0x05) | (eax >> 0x1B);\n        eax = eax + 0x3FF5E49Du;\n        eax = (eax << 0x0D) | (eax >> 0x13);\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
-        "encrypt": "std::uintptr_t encrypt_base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = (eax >> 0x0D) | (eax << 0x13);\n        eax = eax - 0x3FF5E49Du;\n        eax = (eax >> 0x05) | (eax << 0x1B);\n        eax = eax - 0x49C8E325u;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
+        "decrypt": "std::uintptr_t base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax ^ 0x1E7771Eu;\n        eax = (eax << 0x06) | (eax >> 0x1A);\n        eax = eax - 0x1118D90Cu;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
+        "encrypt": "std::uintptr_t encrypt_base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax + 0x1118D90Cu;\n        eax = (eax >> 0x06) | (eax << 0x1A);\n        eax = eax ^ 0x1E7771Eu;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
       },
       "base_networkable_two": {
         "offset": "0x18",
         "uses_key": false,
         "is_loop": true,
-        "decrypt": "std::uintptr_t base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax ^ 0xCE5C4827u;\n        eax = eax + 0x693A1194u;\n        eax = (eax << 0x04) | (eax >> 0x1C);\n        eax = eax - 0x3E19D550u;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
-        "encrypt": "std::uintptr_t encrypt_base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax + 0x3E19D550u;\n        eax = (eax >> 0x04) | (eax << 0x1C);\n        eax = eax - 0x693A1194u;\n        eax = eax ^ 0xCE5C4827u;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
+        "decrypt": "std::uintptr_t base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax ^ 0xF651832Au;\n        eax = eax + 0x87D72C46u;\n        eax = (eax << 0x04) | (eax >> 0x1C);\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
+        "encrypt": "std::uintptr_t encrypt_base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = (eax >> 0x04) | (eax << 0x1C);\n        eax = eax - 0x87D72C46u;\n        eax = eax ^ 0xF651832Au;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
       }
-    
