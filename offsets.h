@@ -7,23 +7,46 @@ namespace Offsets
 {
 	namespace BasePlayer
 	{
-		constexpr auto playerNames                             = 0x668;
-		constexpr auto PlayerEyes                              = 0x2c8;
-		constexpr auto PlayerInventory                         = 0x300;
-		constexpr auto PlayerInput                             = 0x700;
-		constexpr auto PlayerMovement                          = 0x4a0;
-		constexpr auto PlayerModel                             = 0x500;
+		constexpr auto playerNames                             = 0x2d8;
+		constexpr auto PlayerEyes                              = 0x670;
+		constexpr auto PlayerInventory                         = 0x460;
+		constexpr auto PlayerInput                             = 0x588;
+		constexpr auto PlayerMovement                          = 0x3a8;
+		constexpr auto PlayerModel                             = 0x6f8;
 		constexpr auto playerFlags                             = 0x630;
-		constexpr auto ModelState                              = 0x5c8;
+		constexpr auto ModelState                              = 0x660;
 		constexpr auto currentTeam                             = 0x4b8;
 		constexpr auto clActiveItem                            = 0x4e8;
 		constexpr auto clothingBlocksAiming                    = 0x714;
 		constexpr auto clothingMoveSpeedReduction              = 0x718;
 		constexpr auto UserID                                  = 0x4d8;
-		constexpr auto metabolism                              = 0x588;
-		constexpr auto modifiers                               = 0x2a8;
+		constexpr auto SteamID                                 = 0x500;
+		constexpr auto metabolism                              = 0x658;
+		constexpr auto modifiers                               = 0x458;
 		constexpr auto clothingAccuracyBonus                   = 0x720;
 		constexpr auto clothingWaterSpeedBonus                 = 0x71c;
+	}
+
+	namespace MainCamera
+	{
+		constexpr auto MainCamera_C                            = 0xe3dce78;
+		constexpr auto mainCameraTransform                     = 0x78;
+	}
+
+	namespace Camera
+	{
+		constexpr auto MainCamera_C                            = 0xe3dce78;
+	}
+
+	namespace BaseNetworkable
+	{
+		constexpr auto BaseNetworkable_C                       = 0xe3d0568;
+		constexpr auto static_fields                           = 0xb8;
+		constexpr auto wrapper_class_ptr                       = 0x8;
+		constexpr auto ClientEntities                          = 0x10;
+		constexpr auto Entity                                  = 0x10;
+		constexpr auto Buffer                                  = 0x18;
+		constexpr auto ArrayBase                               = 0x20;
 	}
 
 	namespace BaseEntity
@@ -32,7 +55,7 @@ namespace Offsets
 		constexpr auto Bounds                                  = 0xc8;
 		constexpr auto flags                                   = 0xf8;
 		constexpr auto skinID                                  = 0x100;
-		constexpr auto triggers                                = 0x190;
+		constexpr auto triggers                                = 0x168;
 		constexpr auto HasBrain                                = 0x110;
 		constexpr auto gameObject                              = 0xe0;
 	}
@@ -54,43 +77,39 @@ namespace Offsets
 		constexpr auto Velocity                                = 0x204;
 		constexpr auto newVelocity                             = 0x210;
 		constexpr auto Rotation                                = 0x228;
-		constexpr auto GestureConfig                           = 0x370;
+		constexpr auto GestureConfig                           = 0x378;
 		constexpr auto IsNpc__BackingField                     = 0x4c4;
-		constexpr auto __Multimesh                             = 0x1f0;
+		constexpr auto __Multimesh                             = 0x358;
 	}
 
-	// ItemContainer real: %f17b0f7dcd18fec1d35b1eaf171b45dc8327ea69
 	namespace PlayerInventory
 	{
-		constexpr auto ItemContainer                           = 0x28;
-		constexpr auto ContainerBelt                           = 0x30;
+		constexpr auto ItemContainer                           = 0x30;
+		constexpr auto ContainerBelt                           = 0x58;
 		constexpr auto ContainerWear                           = 0x78;
 	}
 
-	// real: %646dec92f2e0392452ad1db4f4eede646e78dad9
 	namespace Item
 	{
 		constexpr auto ItemList                                = 0x40;
-		constexpr auto ItemDefinition                          = 0x48;
+		constexpr auto ItemDefinition                          = 0xd0;
 		constexpr auto Amount                                  = 0x20;
-		constexpr auto CurrentHealth                           = 0x14;
-		constexpr auto MaxHealth                               = 0xd0;
-		constexpr auto ItemUID                                 = 0xc8;
-		constexpr auto HeldEntity                              = 0x58;
+		constexpr auto CurrentHealth                           = 0x10;
+		constexpr auto MaxHealth                               = 0x94;
+		constexpr auto ItemUID                                 = 0x30;
 	}
 
-	// real: %f17b0f7dcd18fec1d35b1eaf171b45dc8327ea69
 	namespace ItemContainer
 	{
-		constexpr auto ItemList                                = 0x60;
-		constexpr auto Capacity                                = 0x38;
+		constexpr auto ItemList                                = 0x40;
+		constexpr auto Capacity                                = 0x10;
 	}
 
 	namespace List
 	{
-		constexpr auto Buffer                                  = 0x10;
-		constexpr auto Count                                   = 0x18;
-		constexpr auto ArrayBase                               = 0x20;
+		constexpr auto Buffer                                  = 0x48;
+		constexpr auto Count                                   = 0x50;
+		constexpr auto ArrayBase                               = 0x58;
 	}
 
 	namespace HeldEntity
@@ -102,12 +121,18 @@ namespace Offsets
 
 	namespace BaseViewModel
 	{
-		constexpr auto IronSights                              = 0x98;
-		constexpr auto AnimationEvents                         = 0x80;
-		constexpr auto ViewmodelBob                            = 0xd8;
-		constexpr auto ViewmodelSway                           = 0x88;
+		constexpr auto IronSights                              = 0xa8;
+		constexpr auto AnimationEvents                         = 0xd8;
+		constexpr auto ViewmodelBob                            = 0xc0;
+		constexpr auto ViewmodelSway                           = 0xa0;
 		constexpr auto useViewModelCamera                      = 0x40;
 		constexpr auto lazyaimRegular                          = 0x28;
+		constexpr auto ListPTR                                 = 0x8;
+	}
+
+	namespace AnimationEvents
+	{
+		constexpr auto targetEntity                            = 0x28;
 	}
 
 	namespace ItemDefinition
@@ -115,7 +140,7 @@ namespace Offsets
 		constexpr auto shortname                               = 0x28;
 		constexpr auto itemid                                  = 0x20;
 		constexpr auto displayName                             = 0x40;
-		constexpr auto ItemMod                                 = 0x158;
+		constexpr auto ItemMod                                 = 0x160;
 		constexpr auto category                                = 0x58;
 		constexpr auto rarity                                  = 0x90;
 		constexpr auto stackable                               = 0x78;
@@ -181,30 +206,29 @@ namespace Offsets
 		constexpr auto previousVelocity                        = 0x198;
 		constexpr auto projectileID                            = 0x20;
 		constexpr auto owner                                   = 0x128;
-		constexpr auto hitTest                                 = 0x118;
+		constexpr auto hitTest                                 = 0x108;
 		constexpr auto drag                                    = 0x34;
 		constexpr auto gravityModifier                         = 0x38;
 		constexpr auto traveledDistance                        = 0x174;
 		constexpr auto mod                                     = 0x110;
 	}
 
-	// real: %ab5bfbc425bffcd97b6699eb3ccd08ec637267f7
 	namespace HitTest
 	{
-		constexpr auto HitTransform                            = 0x60;
-		constexpr auto HitEntity                               = 0x10;
-		constexpr auto type                                    = 0x18;
-		constexpr auto Radius                                  = 0x44;
-		constexpr auto didHit                                  = 0x28;
-		constexpr auto HitNormal                               = 0x1c;
-		constexpr auto HitPoint                                = 0x50;
-		constexpr auto damageProperties                        = 0x70;
-		constexpr auto HitDistance                             = 0x68;
-		constexpr auto MultiHit                                = 0x29;
-		constexpr auto attackRay                               = 0x2c;
-		constexpr auto collider                                = 0x88;
-		constexpr auto gameObject                              = 0xc0;
-		constexpr auto Bone                                    = 0x60;
+		constexpr auto HitTransform                            = 0xc8;
+		constexpr auto HitEntity                               = 0x50;
+		constexpr auto type                                    = 0x1c;
+		constexpr auto Radius                                  = 0x10;
+		constexpr auto didHit                                  = 0x18;
+		constexpr auto HitNormal                               = 0x20;
+		constexpr auto HitPoint                                = 0xb8;
+		constexpr auto damageProperties                        = 0xa8;
+		constexpr auto HitDistance                             = 0x14;
+		constexpr auto MultiHit                                = 0x74;
+		constexpr auto attackRay                               = 0x58;
+		constexpr auto collider                                = 0x38;
+		constexpr auto gameObject                              = 0xd0;
+		constexpr auto Bone                                    = 0xc8;
 	}
 
 	namespace RecoilProperties
@@ -240,11 +264,11 @@ namespace Offsets
 	namespace PatrolHelicopter
 	{
 		constexpr auto weakspots                               = 0x420;
-		constexpr auto spotlightTarget                         = 0x3c8;
+		constexpr auto spotlightTarget                         = 0x3d0;
 		constexpr auto maxCratesToSpawn                        = 0x358;
 		constexpr auto bulletDamage                            = 0x360;
 		constexpr auto bulletSpeed                             = 0x35c;
-		constexpr auto myAI                                    = 0x438;
+		constexpr auto myAI                                    = 0x3a0;
 	}
 
 	namespace CompoundBowWeapon
@@ -300,19 +324,17 @@ namespace Offsets
 		constexpr auto state                                   = 0x28;
 	}
 
-	// real: %cc635d5fa753a0ffac59b1b4e63cf9f845795993
 	namespace InputState
 	{
 		constexpr auto current                                 = 0x18;
 		constexpr auto previous                                = 0x20;
 	}
 
-	// real: %4a61f8930700e60ffffb3af0e95e80b0b846ed75
 	namespace InputMessage
 	{
-		constexpr auto buttons                                 = 0x20;
+		constexpr auto buttons                                 = 0x2c;
 		constexpr auto aimAngles                               = 0x10;
-		constexpr auto mouseDelta                              = 0x24;
+		constexpr auto mouseDelta                              = 0x1c;
 	}
 
 	namespace PlayerWalkMovement
@@ -446,7 +468,7 @@ namespace Offsets
 	namespace BuildingBlock
 	{
 		constexpr auto grade                                   = 0x330;
-		constexpr auto blockDefinition                         = 0x2f8;
+		constexpr auto blockDefinition                         = 0x300;
 	}
 
 	namespace GrowableEntity
@@ -520,7 +542,7 @@ namespace Offsets
 
 	namespace Planner
 	{
-		constexpr auto CurrentConstruction                     = 0x2b8;
+		constexpr auto CurrentConstruction                     = 0x2c0;
 	}
 
 	namespace GestureConfig
@@ -842,19 +864,9 @@ namespace Offsets
 		constexpr auto tickRate                                = 0x380;
 	}
 
-	namespace BaseNetworkable
-	{
-		constexpr auto ghandle                                 = 0xe4aaa90; // sig: "0D 88 55 80 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
-		constexpr auto StaticFields                            = 0xb8;
-		constexpr auto ClientEntities                          = 0x10;
-		constexpr auto EntityList                              = 0x10;
-		constexpr auto Buffer                                  = 0x18;
-		constexpr auto ArrayBase                               = 0x20;
-	}
-
 	namespace ListComponent_Projectile
 	{
-		constexpr auto ListComponent_Projectile_C              = 0xe46a190; // sig: "F1 52 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 6C B0 7B"
+		constexpr auto ListComponent_Projectile_C              = 0xe4079f8;
 		constexpr auto static_fields                           = 0xb8;
 		constexpr auto instance                                = 0x28;
 		constexpr auto instance_two                            = 0x18;
@@ -862,28 +874,28 @@ namespace Offsets
 
 	namespace TodSky
 	{
-		constexpr auto TodSky_C                                = 0xe4ef0d8; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 E8 ?? ?? ?? ?? 80 BB 44 02 00 00 00"
+		constexpr auto TodSky_C                                = 0xe330f48;
 		constexpr auto Instance                                = 0x10;
 	}
 
 	namespace Convar_Admin
 	{
-		constexpr auto TypeInfo                                = 0xe4ccb70; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 82 B4 69 0D 01 33 D2 48 8B CB E8 6B"
+		constexpr auto TypeInfo                                = 0xe41ae28;
 	}
 
 	namespace Convar_Graphics
 	{
-		constexpr auto TypeInfo                                = 0xe453bf8; // sig: "48 83 EC 20 80 3D 28 AC 47 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 0B AC 47 0E 01 48 8B 05 ?? ?? ?? ??"
+		constexpr auto TypeInfo                                = 0xe37de30;
 	}
 
 	namespace Convar_Server
 	{
-		constexpr auto TypeInfo                                = 0xe49dfd8; // sig: "0D E8 ?? ?? ?? ?? 4B F9 A5 FF F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+		constexpr auto TypeInfo                                = 0xe3ccc40;
 	}
 
 	namespace SingletonClimate
 	{
-		constexpr auto Climate_C                               = 0xe3fa998; // sig: "CC CC CC 48 83 EC 28 80 3D E3 6A 79 ?? 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 C9 6A 79 ?? 01 48 8B 05 ?? ?? ?? ??"
+		constexpr auto Climate_C                               = 0xe3e04e0;
 		constexpr auto static_fields                           = 0xb8;
 		constexpr auto Instance                                = 0x28;
 	}
@@ -898,70 +910,63 @@ namespace Offsets
 
 	namespace ItemIcon
 	{
-		constexpr auto ItemIcon_C                              = 0xe453f18; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 04 2E 96 0B 01 48 8B 0D ?? ?? ?? ??"
+		constexpr auto ItemIcon_C                              = 0xe3a9b78;
 		constexpr auto Static_fields                           = 0xc0;
 		constexpr auto Instance                                = 0x18;
 	}
 
 	namespace PlayerEyes_Static
 	{
-		constexpr auto PlayerEyes_C                            = 0xe4cad60; // sig: "60 80 3D 15 F7 65 0D 00 48 8B FA 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F5 F6 65 0D 01 48 8B 05 ?? ?? ?? ??"
+		constexpr auto PlayerEyes_C                            = 0xe413fe0;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace BasePlayer_Static
 	{
-		constexpr auto BasePlayer_C                            = 0xe4cc9a8; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 45 1A 84 0D 01 33 C9 E8 ?? ?? ?? ??"
+		constexpr auto BasePlayer_C                            = 0xe3442e0;
 		constexpr auto static_fields                           = 0xb8;
 		constexpr auto visiblePlayerList                       = 0xf50;
 	}
 
 	namespace CameraUpdateHook_Static
 	{
-		constexpr auto CameraUpdateHook_C                      = 0xe45a3d8; // sig: "0D AA CE C8 0C E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+		constexpr auto CameraUpdateHook_C                      = 0xe4110e0;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace Planner_Static
 	{
-		constexpr auto Planner_C                               = 0xe4b1bd8; // sig: "48 83 EC 20 80 3D 3E C4 AD 0D 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 21 C4 AD 0D 01 48 8B 15 ?? ?? ?? ??"
+		constexpr auto Planner_C                               = 0xe419f00;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace MapView_Static
 	{
-		constexpr auto MapView_C                               = 0xe451110; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 75 ?? 9C 0D 01 48 8B 05 ?? ?? ?? ??"
+		constexpr auto MapView_C                               = 0xe373ff8;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace CraftingQueue_Static
 	{
-		constexpr auto CraftingQueue_C                         = 0xe4ec0e0; // sig: "0D 23 7F ?? 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 8B A6 3F 0D 01 33 C9 E8 30 A6 66"
+		constexpr auto CraftingQueue_C                         = 0xe35f5f8;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace WaterSystem_Static
 	{
-		constexpr auto WaterSystem_C                           = 0xe411c28; // sig: "CC CC CC 48 83 EC 28 80 3D BC 12 D2 0C 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 A2 12 D2 0C 01 48 8B 05 ?? ?? ?? ??"
+		constexpr auto WaterSystem_C                           = 0xe40e890;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace BaseScreenShake_Static
 	{
-		constexpr auto BaseScreenShake_C                       = 0xe45f348; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 88 C7 AB 09 01 4C 8B 05 ?? ?? ?? ??"
+		constexpr auto BaseScreenShake_C                       = 0xe3363f0;
 		constexpr auto static_fields                           = 0xb8;
-	}
-
-	namespace MainCamera
-	{
-		constexpr auto MainCamera_C                            = 0xe4bace8; // sig: "48 83 EC 20 80 3D 8D 2B 6C 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
-		constexpr auto mainCamera                              = 0x58;
-		constexpr auto mainCameraTransform                     = 0x78;
 	}
 
 	namespace SingletonComponent_MainCamera
 	{
-		constexpr auto SingletonComponent_C                    = 0xe457d38; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F2 7F ?? 0D 01 48 8B 9F E8 00 00 00"
+		constexpr auto SingletonComponent_C                    = 0xe406248;
 		constexpr auto Instance                                = 0x10;
 	}
 
@@ -973,7 +978,7 @@ namespace Offsets
 
 	namespace Performance_Static
 	{
-		constexpr auto Performance_C                           = 0xe4cacb8; // sig: "0D AD EE 33 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+		constexpr auto Performance_C                           = 0xe408ff8;
 		constexpr auto static_fields                           = 0xb8;
 		constexpr auto fps                                     = 0x49c;
 	}
@@ -985,38 +990,52 @@ namespace Offsets
 
 	namespace TOD_Sky_Static
 	{
-		constexpr auto TOD_Sky_C                               = 0xe4ef0d8; // sig: "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 E8 ?? ?? ?? ?? 80 BB 44 02 00 00 00"
+		constexpr auto TOD_Sky_C                               = 0xe330f48;
 		constexpr auto static_fields                           = 0xb8;
-		constexpr auto Instance                                = 0x10;
+		constexpr auto Instance                                = 0x80;
 	}
 
 	namespace OcclusionCulling
 	{
-		constexpr auto OcclusionCulling_C                      = 0xe4d73c8; // sig: "0D 78 ?? 14 09 E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+		constexpr auto OcclusionCulling_C                      = 0xe3468c0;
 		constexpr auto static_fields                           = 0xb8;
 	}
 
 	namespace ModelState
 	{
-		constexpr auto Flags                                   = 0x68;
-		constexpr auto WaterLevel                              = 0x60;
-		constexpr auto Ducking                                 = 0x64;
-	}
-
-	namespace Camera
-	{
-		constexpr auto MainCamera_C                            = 0xe4bace8; // sig: "48 83 EC 20 80 3D 8D 2B 6C 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
+		constexpr auto Flags                                   = 0x58;
+		constexpr auto WaterLevel                              = 0x2c;
+		constexpr auto Ducking                                 = 0x30;
 	}
 
 	namespace Il2Cpp
 	{
-		constexpr auto sTypeInfoDefinitionTable                = 0xe7e3b20;
-		constexpr auto Il2CppHandle                            = 0xe7df910;
+		constexpr auto sTypeInfoDefinitionTable                = 0xe7160f8;
+		constexpr auto Il2CppHandle                            = 0xe711ee0;
 	}
+
+	namespace Il2CppClass
+	{
+		constexpr auto name                                    = 0x10;
+		constexpr auto name_space                              = 0x18;
+		constexpr auto parent                                  = 0x58;
+		constexpr auto fields_table                            = 0x80;
+		constexpr auto static_fields                           = 0xb8;
+		constexpr auto fields_size                             = 0x120;
+	}
+
 
 	namespace SceneManager
 	{
-		constexpr auto GetActiveScene                          = 0xbf21fc0;
+		constexpr auto GetActiveScene                          = 0xbe5a910;
+	}
+
+	namespace BaseViewModel_Static
+	{
+		constexpr auto BaseViewModel_C                         = 0xe39b000;
+		constexpr auto static_fields                           = 0xb8;
+		constexpr auto list_baseviewmodel                      = 0x8;
+		constexpr auto baseviewmodel                           = 0xe3b2278;
 	}
 
 }
