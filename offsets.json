@@ -1,30 +1,55 @@
 {
   "offsets": {
     "BasePlayer": {
-      "playerNames": "0x668",
-      "PlayerEyes": "0x2c8",
-      "PlayerInventory": "0x300",
-      "PlayerInput": "0x700",
-      "PlayerMovement": "0x4a0",
-      "PlayerModel": "0x500",
+      "playerNames": "0x370",
+      "PlayerEyes": "0x2e0",
+      "PlayerInventory": "0x2d8",
+      "PlayerInput": "0x670",
+      "PlayerMovement": "0x500",
+      "PlayerModel": "0x3a8",
       "playerFlags": "0x630",
-      "ModelState": "0x5c8",
+      "ModelState": "0x638",
       "currentTeam": "0x4b8",
       "clActiveItem": "0x4e8",
       "clothingBlocksAiming": "0x714",
       "clothingMoveSpeedReduction": "0x718",
       "UserID": "0x4d8",
-      "metabolism": "0x588",
-      "modifiers": "0x2a8",
+      "SteamID": "0x398",
+      "metabolism": "0x4a0",
+      "modifiers": "0x468",
       "clothingAccuracyBonus": "0x720",
       "clothingWaterSpeedBonus": "0x71c"
+    },
+    "MainCamera": {
+      "MainCamera_C": {
+        "value": "0xe4863e8",
+      },
+      "mainCamera": "0xa0",
+      "mainCameraTransform": "0x78"
+    },
+    "Camera": {
+      "MainCamera_C": {
+        "value": "0xe4863e8",
+      }
+    },
+    "BaseNetworkable": {
+      "BaseNetworkable_C": {
+        "value": "0xe43c280",
+      },
+      "parent_static_fields": "0x10",
+      "static_fields": "0xb8",
+      "wrapper_class_ptr": "0x8",
+      "ClientEntities": "0x18",
+      "EntityList": "0x10",
+      "Buffer": "0x18",
+      "ArrayBase": "0x20"
     },
     "BaseEntity": {
       "model": "0xf0",
       "Bounds": "0xc8",
       "flags": "0xf8",
       "skinID": "0x100",
-      "triggers": "0x190",
+      "triggers": "0xc0",
       "HasBrain": "0x110",
       "gameObject": "0xe0"
     },
@@ -42,32 +67,32 @@
       "Velocity": "0x204",
       "newVelocity": "0x210",
       "Rotation": "0x228",
-      "GestureConfig": "0x370",
+      "GestureConfig": "0x378",
       "IsNpc__BackingField": "0x4c4",
-      "__Multimesh": "0x1f0"
+      "__Multimesh": "0x2b8"
     },
     "PlayerInventory": {
       "ItemContainer": "0x28",
-      "ContainerBelt": "0x30",
-      "ContainerWear": "0x78"
+      "ContainerBelt": "0x58",
+      "ContainerWear": "0x60"
     },
     "Item": {
-      "ItemList": "0x40",
+      "ItemList": "0x60",
       "ItemDefinition": "0x48",
-      "Amount": "0x20",
-      "CurrentHealth": "0x14",
+      "Amount": "0x1c",
+      "CurrentHealth": "0x18",
       "MaxHealth": "0xd0",
-      "ItemUID": "0xc8",
-      "HeldEntity": "0x58"
+      "ItemUID": "0xc0",
+      "HeldEntity": "0x30"
     },
     "ItemContainer": {
       "ItemList": "0x60",
-      "Capacity": "0x38"
+      "Capacity": "0x10"
     },
     "List": {
-      "Buffer": "0x10",
-      "Count": "0x18",
-      "ArrayBase": "0x20"
+      "Buffer": "0x18",
+      "Count": "0x20",
+      "ArrayBase": "0x28"
     },
     "HeldEntity": {
       "ViewModel": "0x268",
@@ -75,18 +100,21 @@
       "hostileScore": "0x244"
     },
     "BaseViewModel": {
-      "IronSights": "0x98",
-      "AnimationEvents": "0x80",
-      "ViewmodelBob": "0xd8",
+      "IronSights": "0xe8",
+      "AnimationEvents": "0xb8",
+      "ViewmodelBob": "0x98",
       "ViewmodelSway": "0x88",
       "useViewModelCamera": "0x40",
       "lazyaimRegular": "0x28"
+    },
+    "AnimationEvents": {
+      "targetEntity": "0x28"
     },
     "ItemDefinition": {
       "shortname": "0x28",
       "itemid": "0x20",
       "displayName": "0x40",
-      "ItemMod": "0x158",
+      "ItemMod": "0x160",
       "category": "0x58",
       "rarity": "0x90",
       "stackable": "0x78",
@@ -141,28 +169,28 @@
       "previousPosition": "0x18c",
       "previousVelocity": "0x198",
       "projectileID": "0x20",
-      "owner": "0x128",
-      "hitTest": "0x118",
+      "owner": "0x1d8",
+      "hitTest": "0x128",
       "drag": "0x34",
       "gravityModifier": "0x38",
       "traveledDistance": "0x174",
-      "mod": "0x110"
+      "mod": "0x108"
     },
     "HitTest": {
-      "HitTransform": "0x60",
-      "HitEntity": "0x10",
-      "type": "0x18",
-      "Radius": "0x44",
-      "didHit": "0x28",
-      "HitNormal": "0x1c",
-      "HitPoint": "0x50",
-      "damageProperties": "0x70",
-      "HitDistance": "0x68",
-      "MultiHit": "0x29",
-      "attackRay": "0x2c",
-      "collider": "0x88",
-      "gameObject": "0xc0",
-      "Bone": "0x60"
+      "HitTransform": "0xa8",
+      "HitEntity": "0x50",
+      "type": "0xd0",
+      "Radius": "0x10",
+      "didHit": "0x24",
+      "HitNormal": "0x60",
+      "HitPoint": "0xb0",
+      "damageProperties": "0x58",
+      "HitDistance": "0x20",
+      "MultiHit": "0x25",
+      "attackRay": "0x30",
+      "collider": "0x18",
+      "gameObject": "0xd8",
+      "Bone": "0xa8"
     },
     "RecoilProperties": {
       "recoilYawMin": "0x18",
@@ -189,12 +217,12 @@
       "authorizedPlayers": "0x3c0"
     },
     "PatrolHelicopter": {
-      "weakspots": "0x420",
-      "spotlightTarget": "0x3c8",
+      "weakspots": "0x430",
+      "spotlightTarget": "0x3d8",
       "maxCratesToSpawn": "0x358",
       "bulletDamage": "0x360",
       "bulletSpeed": "0x35c",
-      "myAI": "0x438"
+      "myAI": "0x3a8"
     },
     "CompoundBowWeapon": {
       "stringHoldDurationMax": "0x478",
@@ -232,20 +260,20 @@
       "state": "0x28"
     },
     "InputState": {
-      "current": "0x18",
+      "current": "0x10",
       "previous": "0x20"
     },
     "InputMessage": {
-      "buttons": "0x20",
-      "aimAngles": "0x10",
-      "mouseDelta": "0x24"
+      "buttons": "0x14",
+      "aimAngles": "0x1c",
+      "mouseDelta": "0x28"
     },
     "PlayerWalkMovement": {
       "groundAngle": "0x70",
       "groundAngleNew": "0x78",
-      "capsule": "0xf0",
+      "capsule": "0xd8",
       "groundVelocity": "0x128",
-      "ladder": "0xd8"
+      "ladder": "0xe8"
     },
     "BaseMelee": {
       "effectiveRange": "0x29c",
@@ -485,8 +513,8 @@
       "grounded": "0x2e0"
     },
     "BaseOven": {
-      "temperature": "0x388",
-      "allowByproductCreation": "0x3d8"
+      "temperature": "0x390",
+      "allowByproductCreation": "0x3e0"
     },
     "Workbench": {
       "Workbenchlevel": "0x38c"
@@ -588,7 +616,7 @@
     },
     "TriggerBase": {
       "interestLayers": "0x20",
-      "entityContents": "0x40"
+      "entityContents": "0x38"
     },
     "TriggerRadiation": {
       "RadiationAmountOverride": "0x54"
@@ -597,21 +625,9 @@
       "trapSuccessRate": "0x394",
       "tickRate": "0x380"
     },
-    "BaseNetworkable": {
-      "ghandle": {
-        "value": "0xe4aaa90",
-        "sig": "0D 88 55 80 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
-      },
-      "StaticFields": "0xb8",
-      "ClientEntities": "0x10",
-      "EntityList": "0x10",
-      "Buffer": "0x18",
-      "ArrayBase": "0x20"
-    },
     "ListComponent_Projectile": {
       "ListComponent_Projectile_C": {
-        "value": "0xe46a190",
-        "sig": "F1 52 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 6C B0 7B"
+        "value": "0xe4dd1c0",
       },
       "static_fields": "0xb8",
       "instance": "0x28",
@@ -619,33 +635,28 @@
     },
     "TodSky": {
       "TodSky_C": {
-        "value": "0xe4ef0d8",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 E8 ?? ?? ?? ?? 80 BB 44 02 00 00 00"
+        "value": "0xe401ad8",
       },
       "Instance": "0x10"
     },
     "Convar_Admin": {
       "TypeInfo": {
-        "value": "0xe4ccb70",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 82 B4 69 0D 01 33 D2 48 8B CB E8 6B"
+        "value": "0xe489188",
       }
     },
     "Convar_Graphics": {
       "TypeInfo": {
-        "value": "0xe453bf8",
-        "sig": "48 83 EC 20 80 3D 28 AC 47 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 0B AC 47 0E 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe497c68",
       }
     },
     "Convar_Server": {
       "TypeInfo": {
-        "value": "0xe49dfd8",
-        "sig": "0D E8 ?? ?? ?? ?? 4B F9 A5 FF F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe451400",
       }
     },
     "SingletonClimate": {
       "Climate_C": {
-        "value": "0xe3fa998",
-        "sig": "CC CC CC 48 83 EC 28 80 3D E3 6A 79 ?? 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 C9 6A 79 ?? 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe449158",
       },
       "static_fields": "0xb8",
       "Instance": "0x28"
@@ -658,81 +669,65 @@
     },
     "ItemIcon": {
       "ItemIcon_C": {
-        "value": "0xe453f18",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 04 2E 96 0B 01 48 8B 0D ?? ?? ?? ??"
+        "value": "0xe43c188",
       },
       "Static_fields": "0xc0",
       "Instance": "0x18"
     },
     "PlayerEyes_Static": {
       "PlayerEyes_C": {
-        "value": "0xe4cad60",
-        "sig": "60 80 3D 15 F7 65 0D 00 48 8B FA 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F5 F6 65 0D 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe4d3d50",
       },
-      "static_fields": "0xb8"
+      "static_fields": "0xb8",
+      "TypeDefIndex": "0x1b1"
     },
     "BasePlayer_Static": {
       "BasePlayer_C": {
-        "value": "0xe4cc9a8",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 45 1A 84 0D 01 33 C9 E8 ?? ?? ?? ??"
+        "value": "0xe486240",
       },
       "static_fields": "0xb8",
       "visiblePlayerList": "0xf50"
     },
     "CameraUpdateHook_Static": {
       "CameraUpdateHook_C": {
-        "value": "0xe45a3d8",
-        "sig": "0D AA CE C8 0C E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe4ad550",
       },
       "static_fields": "0xb8"
     },
     "Planner_Static": {
       "Planner_C": {
-        "value": "0xe4b1bd8",
-        "sig": "48 83 EC 20 80 3D 3E C4 AD 0D 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 21 C4 AD 0D 01 48 8B 15 ?? ?? ?? ??"
+        "value": "0xe3f8298",
       },
       "static_fields": "0xb8"
     },
     "MapView_Static": {
       "MapView_C": {
-        "value": "0xe451110",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 75 ?? 9C 0D 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe468878",
       },
       "static_fields": "0xb8"
     },
     "CraftingQueue_Static": {
       "CraftingQueue_C": {
-        "value": "0xe4ec0e0",
-        "sig": "0D 23 7F ?? 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 8B A6 3F 0D 01 33 C9 E8 30 A6 66"
+        "value": "0xe4aba68",
       },
       "static_fields": "0xb8"
     },
     "WaterSystem_Static": {
       "WaterSystem_C": {
-        "value": "0xe411c28",
-        "sig": "CC CC CC 48 83 EC 28 80 3D BC 12 D2 0C 00 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 A2 12 D2 0C 01 48 8B 05 ?? ?? ?? ??"
+        "value": "0xe3f7830",
       },
       "static_fields": "0xb8"
     },
     "BaseScreenShake_Static": {
       "BaseScreenShake_C": {
-        "value": "0xe45f348",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 88 C7 AB 09 01 4C 8B 05 ?? ?? ?? ??"
+        "value": "0xe477e40",
       },
-      "static_fields": "0xb8"
-    },
-    "MainCamera": {
-      "MainCamera_C": {
-        "value": "0xe4bace8",
-        "sig": "48 83 EC 20 80 3D 8D 2B 6C 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
-      },
-      "mainCamera": "0x58",
-      "mainCameraTransform": "0x78"
+      "static_fields": "0xb8",
+      "TypeDefIndex": "0x13db"
     },
     "SingletonComponent_MainCamera": {
       "SingletonComponent_C": {
-        "value": "0xe457d38",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 F2 7F ?? 0D 01 48 8B 9F E8 00 00 00"
+        "value": "0xe46faa0",
       },
       "Instance": "0x10"
     },
@@ -742,8 +737,7 @@
     },
     "Performance_Static": {
       "Performance_C": {
-        "value": "0xe4cacb8",
-        "sig": "0D AD EE 33 0D E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe46b9f0",
       },
       "static_fields": "0xb8",
       "fps": "0x49c"
@@ -753,35 +747,60 @@
     },
     "TOD_Sky_Static": {
       "TOD_Sky_C": {
-        "value": "0xe4ef0d8",
-        "sig": "8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 C6 05 E8 ?? ?? ?? ?? 80 BB 44 02 00 00 00"
+        "value": "0xe401ad8",
       },
       "static_fields": "0xb8",
-      "Instance": "0x10"
+      "Instance": "0x80"
     },
     "OcclusionCulling": {
       "OcclusionCulling_C": {
-        "value": "0xe4d73c8",
-        "sig": "0D 78 ?? 14 09 E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0"
+        "value": "0xe4d6020",
       },
       "static_fields": "0xb8"
     },
     "ModelState": {
-      "Flags": "0x68",
-      "WaterLevel": "0x60",
-      "Ducking": "0x64"
-    },
-    "Camera": {
-      "MainCamera_C": {
-        "value": "0xe4bace8",
-        "sig": "48 83 EC 20 80 3D 8D 2B 6C 0E 00 48 8B D9 75 ?? 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83 0C 24 00 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? F0 83"
-      }
+      "Flags": "0x60",
+      "WaterLevel": "0x20",
+      "Ducking": "0x24"
     },
     "Il2Cpp": {
-      "sTypeInfoDefinitionTable": "0xe7e3b20"
+      "sTypeInfoDefinitionTable": {
+        "value": "0xe7d0e60",
+      },
+      "Il2CppHandle": {
+        "value": "0xe7ccc60",
+      }
+    },
+    "Il2CppClass": {
+      "name": "0x10",
+      "name_space": "0x18",
+      "parent": "0x58",
+      "fields_table": "0x80",
+      "static_fields": "0xb8",
+      "fields_size": "0x120"
+    },
+    "TransformHierarchy": {
+      "m_LocalTransforms": "0x18",
+      "m_ParentIndices": "0x20",
+      "m_LocalPosition": "0x90"
     },
     "SceneManager": {
-      "GetActiveScene": "0xbf21fc0"
+      "GetActiveScene": "0xbf1f900"
+    },
+    "PhysX": {
+      "getActors": "0x147e9c0",
+      "NpScene_actorArray": "0x23d8",
+      "NpScene_actorCount": "0x23e0",
+      "NpPhysics": "0x1c54548",
+      "NpPhysics_scenes": "0x8",
+      "NpPhysics_sceneCount": "0x10",
+      
+    "BaseViewModel_Static": {
+      "BaseViewModel_C": {
+        "value": "0xe4aa1b0",
+      },
+      "static_fields": "0xb8",
+      "list_baseviewmodel": "0x0" // idk why this isnt working :sob:
     }
   },
   "decryptions": {
@@ -790,13 +809,13 @@
         "offset": "0x18",
         "uses_key": false,
         "is_loop": true,
-        "decrypt": "std::uintptr_t base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax ^ 0x1E7771Eu;\n        eax = (eax << 0x06) | (eax >> 0x1A);\n        eax = eax - 0x1118D90Cu;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
-        "encrypt": "std::uintptr_t encrypt_base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax + 0x1118D90Cu;\n        eax = (eax >> 0x06) | (eax << 0x1A);\n        eax = eax ^ 0x1E7771Eu;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
+        "decrypt": "std::uintptr_t base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = (eax >> 0x0E) | (eax << 0x12);\n        eax = eax + 0x97ACC028u;\n        eax = (eax << 0x0C) | (eax >> 0x14);\n        eax = eax + 0x12C55E8Bu;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
+        "encrypt": "std::uintptr_t encrypt_base_networkable_one(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax - 0x12C55E8Bu;\n        eax = (eax >> 0x0C) | (eax << 0x14);\n        eax = eax - 0x97ACC028u;\n        eax = (eax << 0x0E) | (eax >> 0x12);\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
       },
       "base_networkable_two": {
         "offset": "0x18",
         "uses_key": false,
         "is_loop": true,
-        "decrypt": "std::uintptr_t base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = eax ^ 0xF651832Au;\n        eax = eax + 0x87D72C46u;\n        eax = (eax << 0x04) | (eax >> 0x1C);\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
-        "encrypt": "std::uintptr_t encrypt_base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = (eax >> 0x04) | (eax << 0x1C);\n        eax = eax - 0x87D72C46u;\n        eax = eax ^ 0xF651832Au;\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
+        "decrypt": "std::uintptr_t base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax, ecx;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = (eax >> 0x13) | (eax << 0x0D);\n        eax = eax + 0x151DA616u;\n        eax = (eax << 0x10) | (eax >> 0x10);\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n",
+        "encrypt": "std::uintptr_t encrypt_base_networkable_two(std::uintptr_t a1)\n{\n    std::uintptr_t rax = a1;\n    std::uintptr_t* rdx = &rax;\n    std::uint32_t r8d = 0x2;\n    uint32_t eax;\n\n    do {\n        eax = *(std::uint32_t*)(rdx);\n        rdx = (std::uintptr_t*)((std::uint8_t*)rdx + 0x4);\n        eax = (eax >> 0x10) | (eax << 0x10);\n        eax = eax - 0x151DA616u;\n        eax = (eax << 0x13) | (eax >> 0x0D);\n        *((std::uint32_t*)rdx - 1) = eax;\n        --r8d;\n    } while (r8d);\n    return rax;\n}\n"
       }
